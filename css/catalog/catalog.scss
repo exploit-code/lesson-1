@@ -22,7 +22,7 @@
         line-height: 17px;
         color: #636363;
 
-        &--color {
+        &-color {
             font-weight: 700;
             color: #F16D7F;
         }
@@ -117,6 +117,39 @@
             color: #F16D7F;
             font-size: 16px;
             line-height: 19px;
+        }
+    }
+}
+
+.pagination {
+    &__section {
+        display: flex;
+        justify-content: center;
+        padding-top: 48px;
+    }
+
+    &__box {
+        list-style-type: none;
+        display: flex;
+        border: 1px solid #EBEBEB;
+        align-items: center;
+        padding: 12px 16px;
+        border-radius: 4px;
+    }
+
+    &__item {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        display: flex;
+        align-items: center;
+        color: #EBEBEB;
+        cursor: pointer;
+        &:not(:last-child){
+            margin-right: 18px;
+        }
+        &:nth-child(2){
+            color: #F16D7F;
         }
     }
 }
