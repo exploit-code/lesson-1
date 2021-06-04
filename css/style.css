@@ -465,6 +465,14 @@
   display: flex;
 }
 
+.footer-bottom__item:hover .footer-bottom__item-bg {
+  fill: #F16D7F;
+}
+
+.footer-bottom__item:hover .footer-bottom__item-color {
+  fill: #FFFFFF;
+}
+
 .footer-bottom__item:not(:last-child) {
   margin-right: 7px;
 }
@@ -509,8 +517,8 @@
   padding: 51px 0px 64px 0px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-columns: (360px)[3];
+      grid-template-columns: repeat(3, 360px);
   gap: 30px;
 }
 

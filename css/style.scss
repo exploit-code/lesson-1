@@ -379,6 +379,15 @@
                 display: flex;
             }
         }
+        &__item:hover{
+            .footer-bottom__item-bg{
+                fill: #F16D7F;
+            }
+            .footer-bottom__item-color{
+                fill: #FFFFFF;
+            }
+        }
+        
 
         &__item:not(:last-child) {
             margin-right: 7px;
@@ -422,7 +431,7 @@
     &__box {
         padding: 51px 0px 64px 0px;
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, 360px);
         gap: 30px;
     }
 
