@@ -551,6 +551,7 @@
   cursor: pointer;
   display: inline-block;
   padding: 0px 17px 0px 17px;
+  outline: none;
 }
 
 .filter__details-head::-webkit-details-marker {
@@ -571,18 +572,18 @@
 
 .filter__details-heading {
   list-style-type: none;
-  min-height: 37px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-left: 11px;
+  padding: 8.5px 11px;
   border-left: 5px solid #EF5B70;
   border-bottom: 1px solid #EBEBEB;
   color: #6F6E6E;
   cursor: pointer;
+  outline: none;
 }
 
 .filter__details-heading::-webkit-details-marker {
@@ -694,6 +695,18 @@
 }
 
 .pagination__item:nth-child(2) {
+  color: #F16D7F;
+}
+
+.heading-page {
+  padding: 60px 0px;
+  background-color: #F8F3F4;
+}
+
+.heading-page__item {
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 400;
   color: #F16D7F;
 }
 /*# sourceMappingURL=style.css.map */
