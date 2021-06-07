@@ -70,7 +70,7 @@
                             </svg>
                         </summary>
                         <div class="filter__content-box">
-                            <details class="filter__item">
+                            <details class="filter__item" open>
                                 <summary class="filter__details-heading">CATEGORY</summary>
                                 <div class="filter__details-content">
                                     <ul class="filter__details-list">
@@ -127,7 +127,6 @@
                             </svg>
                         </li>
                     </ul>
-                    <div class="filter__checkbox"></div>
                 </div>
             </div>
         </section>
@@ -348,7 +347,7 @@
                         <form>
                             <fieldset class="footer-top__form-box">
                                 <input class="footer-top__email" type="email" required placeholder="Enter Your Email"
-                                    pattern="[^ @]*@[^ @]*">
+                                    pattern="[^@]+@[^@]+\.[a-zA-Z]{2,}" required>
                                 <input class="footer-top__submit" type="submit" value="Subscribe">
                             </fieldset>
                         </form>
