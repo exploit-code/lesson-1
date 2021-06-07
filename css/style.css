@@ -714,6 +714,12 @@
   padding: 64px 0px 96px 0px;
 }
 
+.registration__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .registration__item {
   border: none;
   display: -webkit-box;
@@ -755,9 +761,16 @@
   margin-bottom: 20px;
 }
 
+.registration__form[placeholder] {
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+}
+
 .registration__radio-button {
-  width: 17px;
-  height: 17px;
+  min-width: 17px;
+  min-height: 17px;
 }
 
 .registration__radio-button-name {
@@ -794,11 +807,59 @@
   cursor: pointer;
 }
 
+.registration__button:hover {
+  background-color: #E05C6E;
+}
+
 .registration__button-text {
   font-size: 14px;
   font-weight: 400;
   line-height: 17px;
   color: #FFFFFF;
   padding-right: 20px;
+}
+
+.loyalty {
+  padding-left: 128px;
+}
+
+.loyalty__heading {
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  font-weight: 300;
+}
+
+.loyalty__sub-heading {
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  font-weight: 300;
+  padding: 22px 0px 21px 0px;
+}
+
+.loyalty__list {
+  list-style-type: none;
+}
+
+.loyalty__list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.loyalty__list-item:not(:last-child) {
+  padding-bottom: 17px;
+}
+
+.loyalty__list-text {
+  padding-left: 22px;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
 }
 /*# sourceMappingURL=style.css.map */
