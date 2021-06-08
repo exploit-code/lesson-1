@@ -589,6 +589,7 @@
   position: absolute;
   top: 0;
   padding-top: 13px;
+  z-index: 1;
 }
 
 .filter__header[open] {
