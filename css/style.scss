@@ -182,6 +182,10 @@
             flex-basis: 360px;
             background-color: #F8F8F8;
             text-align: start;
+
+            &:hover .products-cards__add-cart {
+                opacity: 1;
+            }
         }
 
         &__img-box {
@@ -199,13 +203,9 @@
             justify-content: center;
             align-items: center;
             transition: 0.3s;
-
-            &:hover {
-                opacity: 1;
-            }
         }
 
-        &__hover-button {
+        &__hidden-button {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -215,6 +215,15 @@
             width: 139px;
             height: 44px;
             cursor: pointer;
+
+            &:hover {
+                color: #F16D7F;
+                border-color: #F16D7F;
+            }
+
+            &:hover .products-cards__cart-icon {
+                fill: #F16D7F;
+            }
 
         }
 

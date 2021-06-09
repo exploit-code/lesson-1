@@ -223,6 +223,10 @@
   text-align: start;
 }
 
+.products-cards__item:hover .products-cards__add-cart {
+  opacity: 1;
+}
+
 .products-cards__img-box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -249,11 +253,7 @@
   transition: 0.3s;
 }
 
-.products-cards__add-cart:hover {
-  opacity: 1;
-}
-
-.products-cards__hover-button {
+.products-cards__hidden-button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -269,6 +269,15 @@
   width: 139px;
   height: 44px;
   cursor: pointer;
+}
+
+.products-cards__hidden-button:hover {
+  color: #F16D7F;
+  border-color: #F16D7F;
+}
+
+.products-cards__hidden-button:hover .products-cards__cart-icon {
+  fill: #F16D7F;
 }
 
 .products-cards__text-button {
