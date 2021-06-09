@@ -929,4 +929,121 @@
   line-height: 29px;
   color: #000000;
 }
+
+.shopping-cart {
+  padding: 96px 0px 128px 0px;
+}
+
+.shopping-cart__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.shopping-cart__box {
+  width: 652px;
+}
+
+.shopping-cart__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
+          box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
+  position: relative;
+}
+
+.shopping-cart__item:not(:first-child) {
+  margin-top: 40px;
+}
+
+.shopping-cart__img-box {
+  max-width: 262px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.shopping-cart__img {
+  width: 100%;
+}
+
+.shopping-cart__description {
+  padding: 22px 31px;
+}
+
+.shopping-cart__heading {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  max-width: 260px;
+  color: #222222;
+  max-width: 200px;
+  padding-bottom: 42px;
+}
+
+.shopping-cart__list {
+  list-style-type: none;
+}
+
+.shopping-cart__list-item {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #575757;
+}
+
+.shopping-cart__list-item--price {
+  color: #F16D7F;
+}
+
+.shopping-cart__list-item--quantity {
+  margin-left: 24px;
+  border: 1px solid #EAEAEA;
+  padding: 1px 16px;
+}
+
+.shopping-cart__list-item:not(:last-child) {
+  padding-bottom: 6px;
+}
+
+.shopping-cart__close-button {
+  position: absolute;
+  top: 28px;
+  right: 22px;
+  cursor: pointer;
+}
+
+.shopping-cart__close-button:hover {
+  fill: #F16D7F;
+}
+
+.shopping-cart__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 72px;
+}
+
+.shopping-cart__button {
+  padding: 16px 40px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  background-color: transparent;
+  border: 1px solid #A4A4A4;
+  cursor: pointer;
+}
+
+.shopping-cart__button:hover {
+  border-color: #F16D7F;
+  color: #F16D7F;
+}
 /*# sourceMappingURL=style.css.map */
