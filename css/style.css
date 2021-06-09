@@ -492,6 +492,7 @@
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
   border: none;
+  cursor: pointer;
 }
 
 .footer-top__submit:hover {
@@ -943,11 +944,11 @@
           justify-content: space-between;
 }
 
-.shopping-cart__box {
+.shopping-cart-card {
   width: 652px;
 }
 
-.shopping-cart__item {
+.shopping-cart-card__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -956,26 +957,26 @@
   position: relative;
 }
 
-.shopping-cart__item:not(:first-child) {
+.shopping-cart-card__item:not(:first-child) {
   margin-top: 40px;
 }
 
-.shopping-cart__img-box {
+.shopping-cart-card__img-box {
   max-width: 262px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.shopping-cart__img {
+.shopping-cart-card__img {
   width: 100%;
 }
 
-.shopping-cart__description {
+.shopping-cart-card__description {
   padding: 22px 31px;
 }
 
-.shopping-cart__heading {
+.shopping-cart-card__heading {
   font-size: 24px;
   font-weight: 400;
   line-height: 29px;
@@ -985,43 +986,43 @@
   padding-bottom: 42px;
 }
 
-.shopping-cart__list {
+.shopping-cart-card__list {
   list-style-type: none;
 }
 
-.shopping-cart__list-item {
+.shopping-cart-card__list-item {
   font-size: 22px;
   font-weight: 400;
   line-height: 26px;
   color: #575757;
 }
 
-.shopping-cart__list-item--price {
+.shopping-cart-card__list-item-price {
   color: #F16D7F;
 }
 
-.shopping-cart__list-item--quantity {
+.shopping-cart-card__list-item-quantity {
   margin-left: 24px;
   border: 1px solid #EAEAEA;
   padding: 1px 16px;
 }
 
-.shopping-cart__list-item:not(:last-child) {
+.shopping-cart-card__list-item:not(:last-child) {
   padding-bottom: 6px;
 }
 
-.shopping-cart__close-button {
+.shopping-cart-card__close-button {
   position: absolute;
   top: 28px;
   right: 22px;
   cursor: pointer;
 }
 
-.shopping-cart__close-button:hover {
+.shopping-cart-card__close-button:hover {
   fill: #F16D7F;
 }
 
-.shopping-cart__buttons {
+.shopping-cart-card__buttons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1031,7 +1032,7 @@
   padding-top: 72px;
 }
 
-.shopping-cart__button {
+.shopping-cart-card__button {
   padding: 16px 40px;
   font-weight: 300;
   font-size: 14px;
@@ -1042,8 +1043,107 @@
   cursor: pointer;
 }
 
-.shopping-cart__button:hover {
+.shopping-cart-card__button:hover {
   border-color: #F16D7F;
   color: #F16D7F;
+}
+
+.shipping-adress__form {
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.shipping-adress__form-item {
+  width: 360px;
+  border: 1px solid #A4A4A4;
+  outline: none;
+}
+
+.shipping-adress__form-item--submit {
+  max-width: 100px;
+  background-color: transparent;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 13px;
+  color: #4A4A4A;
+  padding: 10px 15px 12px 15px;
+  cursor: pointer;
+}
+
+.shipping-adress__form-item--submit:hover {
+  color: #F16D7F;
+  border-color: #F16D7F;
+}
+
+.shipping-adress__form-item:not(:first-child) {
+  margin-top: 20px;
+}
+
+.shipping-adress__form-item[placeholder] {
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  padding: 13px 17px 16px 17px;
+}
+
+.shipping-adress__heading {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+}
+
+.grand-total {
+  margin-top: 47px;
+  padding: 42px;
+  background-color: #F5F3F3;
+  text-align: end;
+}
+
+.grand-total__sub-heading {
+  font-size: 11px;
+  line-height: 13px;
+  color: #4A4A4A;
+}
+
+.grand-total__sub-heading-price {
+  padding-left: 20px;
+}
+
+.grand-total__heading {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+  padding: 12px 0px 21px 0px;
+  border-bottom: 1px solid #E2E2E2;
+}
+
+.grand-total__heading-color {
+  color: #F16D7F;
+  font-weight: 700;
+  padding-left: 20px;
+}
+
+.grand-total__button {
+  padding: 16px 42px;
+  background-color: #F16D7F;
+  border: none;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  cursor: pointer;
+  margin-top: 17px;
+}
+
+.grand-total__button:hover {
+  background-color: #E05C6E;
 }
 /*# sourceMappingURL=style.css.map */
