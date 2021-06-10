@@ -1036,7 +1036,6 @@
 }
 
 .product-desc {
-    padding-bottom: 128px;
     &__wrapper {
         text-align: center;
         border: 1px solid #EAEAEA;
@@ -1137,7 +1136,11 @@
     }
 }
 
-.product-box{
+.product-box {
     display: flex;
     justify-content: space-between;
+}
+
+.product-page__card-box{
+    padding: 128px 0px;
 }

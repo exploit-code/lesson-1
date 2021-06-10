@@ -1198,10 +1198,6 @@
   fill: #F16D7F;
 }
 
-.product-desc {
-  padding-bottom: 128px;
-}
-
 .product-desc__wrapper {
   text-align: center;
   border: 1px solid #EAEAEA;
@@ -1320,5 +1316,9 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.product-page__card-box {
+  padding: 128px 0px;
 }
 /*# sourceMappingURL=style.css.map */
