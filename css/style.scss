@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
-@import './header';
-@import './main-page';
-@import './footer';
-@import './catalog-page';
-@import './registration-page';
-@import './shopping-cart-page';
-@import './product-page';
+@import './variables';
+@import './block/header';
+@import './pages/main-page';
+@import './block/footer';
+@import './pages/catalog-page';
+@import './pages/registration-page';
+@import './pages/shopping-cart-page';
+@import './pages/product-page';
 
 
 * {

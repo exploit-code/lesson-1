@@ -24,7 +24,7 @@
 
         &-color {
             font-weight: 700;
-            color: #F16D7F;
+            color: $main-color;
         }
     }
 }
@@ -52,11 +52,11 @@
         }
 
         &[open] .filter__heading {
-            color: #EF5B70;
+            color: $main-color;
         }
 
         &[open] .filter__active {
-            fill: #EF5B70;
+            fill: $main-color;
         }
     }
 
@@ -89,7 +89,7 @@
         display: flex;
         align-items: center;
         padding: 8.5px 11px;
-        border-left: 5px solid #EF5B70;
+        border-left: 5px solid $main-color;
         border-bottom: 1px solid #EBEBEB;
         color: #6F6E6E;
         cursor: pointer;
@@ -130,7 +130,7 @@
 
     &__item {
         &[open] .filter__details-heading {
-            color: #EF5B70;
+            color: $main-color;
         }
     }
 
@@ -225,12 +225,12 @@
             cursor: pointer;
 
             &:hover {
-                color: #F16D7F;
-                border-color: #F16D7F;
+                color: $main-color;
+                border-color: $main-color;
             }
 
             &:hover .products-cards__cart-icon {
-                fill: #F16D7F;
+                fill: $main-color;
             }
         }
 
@@ -258,7 +258,7 @@
         }
 
         &__price {
-            color: #F16D7F;
+            color: $main-color;
             font-size: 16px;
             line-height: 19px;
         }
@@ -273,11 +273,11 @@
             font-size: 16px;
             font-weight: 400;
             padding: 15px 39px;
-            border: 1px solid #F16D7F;
-            color: #F16D7F;
+            border: 1px solid $main-color;
+            color: $main-color;
 
             &:hover {
-                background-color: #F16D7F;
+                background-color: $main-color;
                 color: #ffffff;
             }
         }
@@ -314,7 +314,7 @@
         }
 
         &:nth-child(2) {
-            color: #F16D7F;
+            color: $main-color;
         }
     }
 }

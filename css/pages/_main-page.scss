@@ -14,7 +14,7 @@
 
     &__heading {
         padding-left: 16px;
-        border-left: 12px solid #F16D7F;
+        border-left: 12px solid $main-color;
         margin-right: 100px;
     }
 
@@ -32,7 +32,7 @@
     }
 
     &__color-heading {
-        color: #F16D7F;
+        color: $main-color;
     }
 }
 
@@ -90,7 +90,7 @@
         font-size: 24px;
         line-height: 28px;
         font-weight: 700;
-        color: #F16D7F;
+        color: $main-color;
     }
 
 }
@@ -162,12 +162,12 @@
             cursor: pointer;
 
             &:hover {
-                color: #F16D7F;
-                border-color: #F16D7F;
+                color: $main-color;
+                border-color: $main-color;
             }
 
             &:hover .products-cards__cart-icon {
-                fill: #F16D7F;
+                fill: $main-color;
             }
         }
 
@@ -195,7 +195,7 @@
         }
 
         &__price {
-            color: #F16D7F;
+            color: $main-color;
             font-size: 16px;
             line-height: 19px;
         }
@@ -210,11 +210,11 @@
             font-size: 16px;
             font-weight: 400;
             padding: 15px 39px;
-            border: 1px solid #F16D7F;
-            color: #F16D7F;
+            border: 1px solid $main-color;
+            color: $main-color;
 
             &:hover {
-                background-color: #F16D7F;
+                background-color: $main-color;
                 color: #ffffff;
             }
         }

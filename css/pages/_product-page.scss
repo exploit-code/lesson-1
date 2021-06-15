@@ -30,7 +30,7 @@
         align-items: center;
 
         &:hover .product-slider__button-icon {
-            fill: #F16D7F;
+            fill: $main-color;
         }
     }
 }
@@ -50,13 +50,13 @@
         font-weight: 300;
         font-size: 14px;
         line-height: 17px;
-        color: #F16D7F;
+        color: $main-color;
     }
 
     &__line {
         height: 3px;
         width: 63px;
-        background-color: #F16D7F;
+        background-color: $main-color;
         margin: 12px auto;
         border: none;
 
@@ -90,7 +90,7 @@
         font-weight: 300;
         font-size: 24px;
         line-height: 29px;
-        color: #EF5B70;
+        color: $main-color;
     }
 
     &__sort-list {
@@ -122,7 +122,7 @@
         display: flex;
         align-items: center;
         background-color: transparent;
-        border: 1px solid #F26376;
+        border: 1px solid $main-color;
         margin: 0 auto;
         padding: 10px 25px;
         cursor: pointer;
@@ -130,7 +130,7 @@
         &-text {
             font-size: 16px;
             line-height: 19px;
-            color: #F26376;
+            color: $main-color;
             padding-left: 23px;
         }
     }
