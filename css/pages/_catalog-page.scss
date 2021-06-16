@@ -30,10 +30,6 @@
 }
 
 .filter {
-    &__left {
-        position: relative;
-    }
-
     &__box {
         padding: 38px 0px 64px 0px;
         display: grid;
@@ -41,121 +37,127 @@
         gap: 30px;
     }
 
-    &__header {
-        position: absolute;
-        top: 0;
-        padding-top: 13px;
-        z-index: 1;
+    &-left {
+        position: relative;
 
-        &[open] {
-            box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+        &__item {
+            position: absolute;
+            top: 0;
+            padding-top: 13px;
+            z-index: 1;
+
+            &[open] {
+                box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+            }
+
+            &[open] .filter-left__heading {
+                color: $main-color;
+            }
+
+            &[open] .filter-left__active {
+                fill: $main-color;
+            }
         }
 
-        &[open] .filter__heading {
-            color: $main-color;
+        &__details {
+            list-style-type: none;
+            cursor: pointer;
+            display: inline-block;
+            padding: 0px 17px 0px 17px;
+            outline: none;
+
+            &::-webkit-details-marker {
+                display: none;
+            }
         }
 
-        &[open] .filter__active {
-            fill: $main-color;
+        &__heading {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 17px;
+            color: #000000;
+            padding: 0px 11px 0px 0px;
         }
-    }
 
-    &__details-head {
-        list-style-type: none;
-        cursor: pointer;
-        display: inline-block;
-        padding: 0px 17px 0px 17px;
-        outline: none;
+        &__content {
+            padding: 16px 0px 0px 16px;
 
-        &::-webkit-details-marker {
-            display: none;
+            &-box {
+                width: 360px;
+                background-color: #FFFFFF;
+                padding: 16px 17px;
+            }
+
+            &-item:not(:first-child) {
+                padding-top: 18px;
+            }
+
+            &-heading {
+                list-style-type: none;
+                display: flex;
+                align-items: center;
+                padding: 8.5px 11px;
+                border-left: 5px solid $main-color;
+                border-bottom: 1px solid #EBEBEB;
+                color: #6F6E6E;
+                cursor: pointer;
+                outline: none;
+
+                &::-webkit-details-marker {
+                    display: none;
+                }
+            }
+
+            &-list-item {
+                list-style-type: none;
+                font-size: 14px;
+                line-height: 17px;
+                color: #6F6E6E;
+                padding-bottom: 11px;
+                cursor: pointer;
+
+                &:last-child {
+                    padding-bottom: 0px;
+                }
+            }
         }
+
     }
 
-    &__heading {
-        font-weight: 600;
-        font-size: 14px;
-        line-height: 17px;
-        color: #000000;
-        padding: 0px 11px 0px 0px;
-    }
-
-    &__item:not(:first-child) {
-        padding-top: 18px;
-    }
-
-    &__details-heading {
-        list-style-type: none;
+    &-right {
         display: flex;
         align-items: center;
-        padding: 8.5px 11px;
-        border-left: 5px solid $main-color;
-        border-bottom: 1px solid #EBEBEB;
-        color: #6F6E6E;
-        cursor: pointer;
-        outline: none;
-
-        &::-webkit-details-marker {
-            display: none;
-        }
-    }
-
-    &__content-box {
-        width: 360px;
-        background-color: #FFFFFF;
-        padding: 16px 17px;
-    }
-
-    &__details-content {
-        padding: 24px 0px 0px 17px;
-    }
-
-    &__details-list-item {
-        list-style-type: none;
-        font-size: 14px;
-        line-height: 17px;
-        color: #6F6E6E;
-        padding-bottom: 11px;
-        cursor: pointer;
-
-        &:last-child {
-            padding-bottom: 0px;
-        }
-    }
-
-    &__right {
-        display: flex;
         padding-top: 13px;
-    }
 
-    &__item {
-        &[open] .filter__details-heading {
-            color: $main-color;
-        }
-    }
-
-    &__list {
-        list-style-type: none;
-        display: flex;
-
-        &-item {
-            display: flex;
-            align-items: center;
+        &__item {
             cursor: pointer;
 
             &:not(:last-child) {
                 margin-right: 28px;
             }
 
-            &-heading {
-                padding-right: 10px;
+            &--size {
+                position: relative;
+            }
+        }
+
+        &__title {
+            list-style-type: none;
+
+            &::-webkit-details-marker {
+                display: none;
+            }
+
+            & span {
                 font-size: 14px;
+                font-weight: 400;
                 line-height: 17px;
                 color: #6F6E6E;
-                font-weight: 400;
+                padding-right: 10px;
             }
         }
     }
+
 }
 
 .products {
@@ -317,4 +319,42 @@
             color: $main-color;
         }
     }
+}
+
+.hidden-block {
+    background: #FFFFFF;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 9px 30px 11px 9px;
+    margin-top: 10px;
+    position: absolute;
+    cursor: initial;
+    margin-left: -10px;
+
+    &__item {
+        display: flex;
+        align-items: center;
+
+        &:not(:first-child) {
+            margin-top: 6px;
+        }
+
+        & label {
+            font-size: 14px;
+            line-height: 16px;
+            color: #6F6E6E;
+            padding-left: 9px;
+        }
+
+        & input {
+            min-height: 13px;
+            min-width: 13px;
+            // -webkit-appearance: none;
+            // appearance: none;
+            border: 1px solid #EBEBEB;
+        }
+    }
+
 }
