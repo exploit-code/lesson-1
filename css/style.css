@@ -1162,10 +1162,18 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  overflow: hidden;
 }
 
 .shopping-cart-card__img {
   width: 100%;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.shopping-cart-card__img:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
 }
 
 .shopping-cart-card__description {
@@ -1352,10 +1360,14 @@
   color: #FFFFFF;
   cursor: pointer;
   margin-top: 17px;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 .grand-total__button:hover {
   background-color: #E05C6E;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .product-slider {

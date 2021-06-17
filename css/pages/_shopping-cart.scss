@@ -23,10 +23,15 @@
     &__img-box {
         max-width: 262px;
         display: flex;
+        overflow: hidden; // удалить
     }
 
     &__img {
         width: 100%;
+        transition: .5s;
+        &:hover{ // удалить    
+            transform: rotate(360deg);
+        }
     }
 
     &__description {
@@ -205,9 +210,11 @@
         color: #FFFFFF;
         cursor: pointer;
         margin-top: 17px;
+        transition: .3s; // удалить
 
         &:hover {
             background-color: $main-color-hover;
+            transform: scale(1.2); // удалить
         }
 
     }

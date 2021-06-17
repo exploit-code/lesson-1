@@ -131,11 +131,12 @@
             &:hover .products-cards__add-cart {
                 opacity: 1;
             }
+            
         }
 
         &__img-box {
             display: flex;
-            position: relative;
+            position: relative;  
         }
 
         &__add-cart {
