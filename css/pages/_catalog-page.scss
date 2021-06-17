@@ -131,7 +131,12 @@
 
         &__item {
             cursor: pointer;
-
+            &[open] span {
+                color: $main-color
+            }
+            &[open] svg {
+                fill: $main-color
+            }
             &:not(:last-child) {
                 margin-right: 28px;
             }
@@ -139,6 +144,7 @@
             &--size {
                 position: relative;
             }
+            
         }
 
         &__title {

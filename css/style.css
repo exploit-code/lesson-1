@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
 .header {
   background-color: #222222;
-  padding: 18px 0px 19px 0px;
+  padding: 18px 0px 18px 0px;
+  position: relative;
 }
 
 .header__box {
@@ -20,6 +21,11 @@
   margin-right: 41px;
 }
 
+.header__item-right {
+  display: inline-block;
+  cursor: pointer;
+}
+
 .header__item-right:not(:last-child) {
   margin-right: 33px;
 }
@@ -33,7 +39,7 @@
   height: 19px;
   background-color: #EF5B70;
   position: absolute;
-  top: -20px;
+  top: -5px;
   right: -10px;
   border-radius: 50%;
   display: -webkit-box;
@@ -680,6 +686,14 @@
 
 .filter-right__item {
   cursor: pointer;
+}
+
+.filter-right__item[open] span {
+  color: #EF5B70;
+}
+
+.filter-right__item[open] svg {
+  fill: #EF5B70;
 }
 
 .filter-right__item:not(:last-child) {
@@ -1517,6 +1531,95 @@
 
 .product-page__card-box {
   padding: 128px 0px;
+}
+
+.menu {
+  background-color: white;
+  min-width: 232px;
+  min-height: 764px;
+  position: absolute;
+  top: 100%;
+  visibility: hidden;
+  -webkit-transform: translateX(250px);
+          transform: translateX(250px);
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  z-index: 1;
+  right: 0;
+  -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+          box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+}
+
+.menu-hidden {
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+  will-change: transform;
+  visibility: visible;
+}
+
+.menu__cover {
+  padding: 37px 34px 0px 34px;
+  position: relative;
+}
+
+.menu__item:not(:last-child) {
+  padding-bottom: 20px;
+}
+
+.menu__item ul {
+  list-style-type: none;
+}
+
+.menu__item ul li a {
+  font-size: 14px;
+  line-height: 17px;
+  color: #6F6E6E;
+  margin-top: 11px;
+  margin-left: 22px;
+  display: inline-block;
+}
+
+.menu__item ul li a:hover {
+  color: #EF5B70;
+}
+
+.menu__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  padding-bottom: 24px;
+}
+
+.menu__category {
+  font-size: 14px;
+  line-height: 17px;
+  color: #EF5B70;
+  font-weight: 400;
+  list-style-type: none;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+}
+
+.menu__category::-webkit-details-marker {
+  display: none;
+}
+
+.menu__btn-close {
+  background-color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+
+.menu__btn-close:hover svg {
+  fill: #EF5B70;
 }
 
 * {
