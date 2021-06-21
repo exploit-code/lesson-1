@@ -89,7 +89,7 @@
   display: block;
 }
 
-.intro__sub-headinng {
+.intro__sub-heading {
   font-size: 32px;
   line-height: 38px;
   font-weight: 700;
@@ -308,7 +308,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 48px;
+  padding: 48px 0 95px 0;
 }
 
 .products-button__item {
@@ -327,7 +327,6 @@
 .advantages {
   padding: 104px 0px;
   background-color: #222224;
-  margin-top: 95px;
 }
 
 .advantages__box {
@@ -1646,5 +1645,169 @@
 .container {
   max-width: 1140px;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    max-width: 736px;
+  }
+  .header__box {
+    padding: 0 15px;
+  }
+  .intro {
+    max-height: 367px;
+  }
+  .intro__box {
+    background-position: left bottom;
+    background-size: 367px;
+  }
+  .intro__heading {
+    margin-right: 15px;
+  }
+  .intro__sup-heading {
+    font-size: 44px;
+    line-height: 53px;
+  }
+  .intro__sub-heading {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .offer__box {
+    padding: 20px 0px 155px 0px;
+  }
+  .offer__card {
+    height: 167px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 232px;
+            flex: 0 0 232px;
+  }
+  .offer__card--accesories {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-height: 116px;
+    margin-top: 20px;
+  }
+  .products__heading-box {
+    padding-bottom: 93px;
+  }
+  .products-cards {
+    gap: 15px;
+  }
+  .products-button {
+    padding: 32px 0 64px 0;
+  }
+  .advantages {
+    padding: 48px 0px;
+  }
+  .advantages__box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .advantages__item:not(:last-child) {
+    margin-bottom: 48px;
+  }
+  .footer {
+    background-position-x: -380px;
+  }
+  .footer-cover {
+    padding: 64px 0px 140px 0px;
+  }
+  .footer-top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer-top__section:not(:first-child) {
+    margin-top: 48px;
+  }
+  .footer-top__section--right {
+    -ms-flex-preferred-size: 0;
+        flex-basis: 0;
+  }
+  .footer-bottom__box {
+    padding: 24px 15px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    max-width: 360px;
+  }
+  .header__item-right--menu {
+    margin-right: 0 !important;
+  }
+  .header__item-right:not(:first-child) {
+    display: none;
+  }
+  .intro {
+    max-height: 363px;
+  }
+  .intro__box {
+    background-image: none;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .intro__heading {
+    margin: 0;
+  }
+  .intro .intro__sup-heading {
+    font-size: 38px;
+    line-height: 45px;
+  }
+  .intro .intro__sub-heading {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .offer__box {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 64px 0px 64px 0px;
+  }
+  .offer__card {
+    height: 247px;
+    -ms-flex-preferred-size: 343px;
+        flex-basis: 343px;
+  }
+  .offer__card:not(:first-child) {
+    margin-top: 32px;
+  }
+  .offer__card--accesories {
+    max-height: 111px;
+  }
+  .products__heading-box {
+    padding-bottom: 64px;
+  }
+  .products__sub-heading {
+    padding-top: 3px;
+  }
+  .products-button {
+    padding: 40px 0px 96px 0px;
+  }
+  .advantages {
+    margin: 0;
+    padding: 48px 15px 81px 15px;
+  }
+  .footer-cover {
+    padding: 64px 0px 109px 0px;
+  }
+  .footer-bottom__box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    padding: 43px 0px 9px 0px;
+  }
+  .footer-bottom__section--social-networks {
+    padding-bottom: 40px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

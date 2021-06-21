@@ -25,7 +25,7 @@
         display: block;
     }
 
-    &__sub-headinng {
+    &__sub-heading {
         font-size: 32px;
         line-height: 38px;
         font-weight: 700;
@@ -205,7 +205,7 @@
     &-button {
         display: flex;
         justify-content: center;
-        padding-top: 48px;
+        padding: 48px 0 95px 0;
 
         &__item {
             font-size: 16px;
@@ -225,7 +225,6 @@
 .advantages {
     padding: 104px 0px;
     background-color: #222224;
-    margin-top: 95px;
 
     &__box {
         display: flex;
