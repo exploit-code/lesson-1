@@ -41,9 +41,10 @@
         border: 1px solid #EAEAEA;
         padding: 64px 0px;
         background-color: #FFFFFF;
-        margin-top: -64px;
         position: relative;
         z-index: 1;
+        max-width: 1140px;
+        margin: -64px auto 0 auto;
     }
 
     &__heading {
@@ -63,7 +64,8 @@
         &--greey {
             background-color: #EAEAEA;
             height: 1px;
-            width: 641px;
+            width: 70%;
+            max-width: 642px;
             margin: 64px auto;
         }
     }
@@ -113,7 +115,7 @@
     &__sort-title {
         font-size: 14px;
         font-weight: 400;
-        line-height: 17px;
+        line-height: 16px;
         color: #6F6E6E;
         padding-right: 9px;
     }

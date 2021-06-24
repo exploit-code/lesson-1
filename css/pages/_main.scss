@@ -1,21 +1,22 @@
 .intro {
-    height: 764px;
+    height: calc(100vh - 77px);
     background-color: #F1E4E6;
+    max-height: 800px;
 
     &__box {
         background-image: url(../../img/main_photo.png);
         background-repeat: no-repeat;
-        background-position: -228px bottom;
+        background-size: 768px;
+        background-position: -218px bottom;
         height: 100%;
         display: flex;
         align-items: center;
-        justify-content: flex-end;
     }
 
     &__heading {
         padding-left: 16px;
         border-left: 12px solid $main-color;
-        margin-right: 100px;
+        margin-left: 55%;
     }
 
     &__sup-heading {
@@ -37,17 +38,17 @@
 }
 
 .offer {
-
+    
     &__box {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        padding: 65px 0px 96px 0px;
+        padding: 65px 0 155px 0;
     }
 
     &__card {
         height: 260px;
-        flex: 0 0 360px;
+        flex: 0 0 32%;
         background-size: cover;
         background-position: center;
 
@@ -64,9 +65,9 @@
         }
 
         &--accesories {
-            flex-basis: 100%;
+            flex: 1 0 32%;
             margin-top: 30px;
-            height: 180px;
+            max-height: 180px;
             background-image: url(../../img/accesories_img.png);
         }
     }
@@ -118,13 +119,14 @@
     &-cards {
         display: grid;
         justify-content: space-between;
-        grid-template-columns: repeat(auto-fit, minmax(360px, 360px));
+        grid-template-columns: repeat(auto-fit, minmax(320px, 360px));
         gap: 30px;
 
         &__item {
             display: flex;
             flex-direction: column;
-            flex-basis: 360px;
+            flex: 0 0 100%;
+            max-width: 360px;
             background-color: #F8F8F8;
             text-align: start;
 
@@ -137,6 +139,9 @@
         &__img-box {
             display: flex;
             position: relative;  
+            & img{
+                width: 100%;
+            }
         }
 
         &__add-cart {

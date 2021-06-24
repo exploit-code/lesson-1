@@ -1,13 +1,14 @@
 .menu {
     background-color: white;
     min-width: 232px;
-    min-height: 764px;
+    height: calc(100vh - 77px);
     position: absolute;
     top: 100%;
     transition: 0.6s;
     z-index: 1;
     visibility: hidden;
     transform: translateX(250px);
+    overflow: auto;
     
     &-hidden {
         will-change: transform;

@@ -1,20 +1,9 @@
-.heading-page {
-    padding: 60px 0px;
-    background-color: #F8F3F4;
-
-    &__item {
-        font-size: 24px;
-        line-height: 29px;
-        font-weight: 400;
-        color: $main-color;
-    }
-}
-
 .registration {
     padding: 64px 0px 96px 0px;
 
     &__wrapper {
         display: flex;
+        justify-content: space-between;
     }
 
     &__item {
@@ -42,6 +31,7 @@
         padding: 13px 17px 16px 17px;
         border: 1px solid #A4A4A4;
         outline: none;
+        max-height: 45px;
 
         &:not(:last-child) {
             margin-bottom: 20px;
@@ -63,11 +53,12 @@
             font-size: 11px;
             line-height: 13px;
             color: #000000;
+            padding: 0px 20px 0px 10px;
+            &:hover{
+                color: $main-color;
+            }
         }
 
-        &-name {
-            padding: 0px 20px 0px 10px;
-        }
     }
 
     &__parameters-password {
@@ -103,7 +94,8 @@
 }
 
 .loyalty {
-    padding-left: 128px;
+    max-width: 650px;
+    margin-left: 20px;
 
     &__heading {
         font-size: 24px;

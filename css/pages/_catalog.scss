@@ -1,6 +1,5 @@
 .breadcramp {
     background-color: #F8F3F4;
-    ;
 
     &__box {
         display: flex;
@@ -32,9 +31,10 @@
 .filter {
     &__box {
         padding: 38px 0px 64px 0px;
-        display: grid;
-        grid-template-columns: repeat(3, 360px);
-        gap: 30px;
+        // display: grid;
+        // grid-template-columns: repeat(3, 360px);
+        // gap: 30px;
+        display: flex;
     }
 
     &-left {
@@ -43,40 +43,42 @@
         &__item {
             position: absolute;
             top: 0;
-            padding-top: 13px;
             z-index: 1;
+            background: white;
 
             &[open] {
                 box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
             }
 
-            &[open] .filter-left__heading {
+            &[open] span{
                 color: $main-color;
             }
 
-            &[open] .filter-left__active {
+            &[open] svg {
                 fill: $main-color;
             }
         }
 
-        &__details {
+        &__heading {
             list-style-type: none;
             cursor: pointer;
-            display: inline-block;
-            padding: 0px 17px 0px 17px;
+            display: flex;
+            align-items: center;
+            padding-top: 13px;
             outline: none;
+            padding-left: 17px;
 
             &::-webkit-details-marker {
                 display: none;
             }
-        }
 
-        &__heading {
-            font-weight: 600;
-            font-size: 14px;
-            line-height: 17px;
-            color: #000000;
-            padding: 0px 11px 0px 0px;
+            & span {
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 17px;
+                color: #000000;
+                padding: 0px 11px 0px 0px;
+            }
         }
 
         &__content {
@@ -88,6 +90,10 @@
                 padding: 16px 17px;
             }
 
+            &-item[open] summary {
+                color: $main-color;
+            }
+
             &-item:not(:first-child) {
                 padding-top: 18px;
             }
@@ -96,30 +102,36 @@
                 list-style-type: none;
                 display: flex;
                 align-items: center;
-                padding: 8.5px 11px;
                 border-left: 5px solid $main-color;
                 border-bottom: 1px solid #EBEBEB;
                 color: #6F6E6E;
                 cursor: pointer;
                 outline: none;
+                min-height: 37px;
+                padding: 0 0 0 11px;
 
                 &::-webkit-details-marker {
                     display: none;
                 }
             }
 
-            &-list-item {
+            & ul li {
                 list-style-type: none;
-                font-size: 14px;
-                line-height: 17px;
-                color: #6F6E6E;
                 padding-bottom: 11px;
-                cursor: pointer;
+
+                & a {
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: #6F6E6E;
+                    text-decoration: none;
+                }
 
                 &:last-child {
                     padding-bottom: 0px;
                 }
             }
+
+
         }
 
     }
@@ -128,15 +140,19 @@
         display: flex;
         align-items: center;
         padding-top: 13px;
+        margin-left: 35%;
 
         &__item {
             cursor: pointer;
+
             &[open] span {
                 color: $main-color
             }
+
             &[open] svg {
                 fill: $main-color
             }
+
             &:not(:last-child) {
                 margin-right: 28px;
             }
@@ -144,7 +160,7 @@
             &--size {
                 position: relative;
             }
-            
+
         }
 
         &__title {
