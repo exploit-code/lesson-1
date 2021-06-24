@@ -4,7 +4,7 @@
     max-height: 800px;
 
     &__box {
-        background-image: url(../../img/main_photo.png);
+        background-image: url(./../img/main_photo.png);
         background-repeat: no-repeat;
         background-size: 768px;
         background-position: -218px bottom;
@@ -53,22 +53,22 @@
         background-position: center;
 
         &--women {
-            background-image: url(../../img/for_women_img.jpg);
+            background-image: url(./../img/for_women_img.jpg);
         }
 
         &--men {
-            background-image: url(../../img/for_men_img.jpg);
+            background-image: url(./../img/for_men_img.jpg);
         }
 
         &--kids {
-            background-image: url(../../img/for_kids_img.jpg);
+            background-image: url(./../img/for_kids_img.jpg);
         }
 
         &--accesories {
             flex: 1 0 32%;
             margin-top: 30px;
             max-height: 180px;
-            background-image: url(../../img/accesories_img.png);
+            background-image: url(./../img/accesories_img.png);
         }
     }
 
