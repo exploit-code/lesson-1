@@ -28,6 +28,7 @@
 
             &--right {
                 flex-basis: 557px;
+
                 & form {
                     width: 100%;
                     max-width: 345px;
@@ -92,6 +93,8 @@
             justify-content: center;
             border-top-right-radius: 25px;
             border-bottom-right-radius: 25px;
+            border-top-left-radius: 0px;
+            border-bottom-left-radius: 0px;
             border: none;
             cursor: pointer;
 
