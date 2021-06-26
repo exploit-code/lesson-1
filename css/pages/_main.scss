@@ -1,13 +1,13 @@
 .intro {
     height: calc(100vh - 77px);
     background-color: #F1E4E6;
-    max-height: 800px;
+    max-height: 1000px;
 
     &__box {
         background-image: url(./../img/main_photo.png);
         background-repeat: no-repeat;
-        background-size: 768px;
-        background-position: -218px bottom;
+        background-size: auto 100%;
+        background-position: left bottom;
         height: 100%;
         display: flex;
         align-items: center;
@@ -78,6 +78,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding: 20px;
         background-color: rgba(33, 22, 22, 0.7);
     }
 
@@ -92,6 +93,9 @@
         line-height: 28px;
         font-weight: 700;
         color: $main-color;
+        &:hover{
+            color: #EF5A8A;
+        }
     }
 
 }
@@ -190,6 +194,9 @@
             color: #000;
             font-weight: 400;
             line-height: 16px;
+            &:hover{
+                color: $main-color;
+            }
         }
 
         &__sub-heading {
@@ -218,10 +225,12 @@
             padding: 15px 39px;
             border: 1px solid $main-color;
             color: $main-color;
-
             &:hover {
                 background-color: $main-color;
                 color: #ffffff;
+            }
+            &:active{
+                box-shadow: 0 0 10px rgba(0,0,0,0.5);
             }
         }
     }
@@ -239,10 +248,8 @@
     &__item {
         display: flex;
         flex-direction: column;
-        max-width: 360px;
-        justify-content: space-between;
         text-align: center;
-        height: 133px;
+        max-width: 360px;
     }
 
     &__heading {
@@ -250,6 +257,7 @@
         font-weight: 400;
         line-height: 24px;
         color: #FBFBFB;
+        padding: 28px 0 16px 0;
     }
 
     &__description {
