@@ -11,13 +11,18 @@
         justify-content: space-between;
         align-items: center;
     }
-
+    &__item-left:active{
+        fill: $main-color;
+    }
     &__item-left:not(:last-child) {
         margin-right: 41px;
     }
     &__item-right{
         display: inline-block;
         cursor: pointer;
+        & svg:active{
+            fill: $main-color;
+        }
     }
     &__item-right:not(:last-child) {
         margin-right: 33px;

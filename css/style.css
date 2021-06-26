@@ -20,6 +20,10 @@
           align-items: center;
 }
 
+.header__item-left:active {
+  fill: #EF5B70;
+}
+
 .header__item-left:not(:last-child) {
   margin-right: 41px;
 }
@@ -27,6 +31,10 @@
 .header__item-right {
   display: inline-block;
   cursor: pointer;
+}
+
+.header__item-right svg:active {
+  fill: #EF5B70;
 }
 
 .header__item-right:not(:last-child) {
@@ -61,14 +69,14 @@
 .intro {
   height: calc(100vh - 77px);
   background-color: #F1E4E6;
-  max-height: 800px;
+  max-height: 1000px;
 }
 
 .intro__box {
-  background-image: url(../../img/main_photo.png);
+  background-image: url(./../img/main_photo.png);
   background-repeat: no-repeat;
-  background-size: 768px;
-  background-position: -218px bottom;
+  background-size: auto 100%;
+  background-position: left bottom;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -123,15 +131,15 @@
 }
 
 .offer__card--women {
-  background-image: url(../../img/for_women_img.jpg);
+  background-image: url(./../img/for_women_img.jpg);
 }
 
 .offer__card--men {
-  background-image: url(../../img/for_men_img.jpg);
+  background-image: url(./../img/for_men_img.jpg);
 }
 
 .offer__card--kids {
-  background-image: url(../../img/for_kids_img.jpg);
+  background-image: url(./../img/for_kids_img.jpg);
 }
 
 .offer__card--accesories {
@@ -140,7 +148,7 @@
           flex: 1 0 32%;
   margin-top: 30px;
   max-height: 180px;
-  background-image: url(../../img/accesories_img.png);
+  background-image: url(./../img/accesories_img.png);
 }
 
 .offer__cover {
@@ -158,6 +166,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 20px;
   background-color: rgba(33, 22, 22, 0.7);
 }
 
@@ -172,6 +181,10 @@
   line-height: 28px;
   font-weight: 700;
   color: #EF5B70;
+}
+
+.offer__sub-heading:hover {
+  color: #EF5A8A;
 }
 
 .products__heading-box {
@@ -296,6 +309,10 @@
   line-height: 16px;
 }
 
+.products-cards__heading:hover {
+  color: #EF5B70;
+}
+
 .products-cards__sub-heading {
   font-weight: 300;
   font-size: 14px;
@@ -333,6 +350,11 @@
   color: #ffffff;
 }
 
+.products-button__item:active {
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
 .advantages {
   padding: 104px 0px;
   background-color: #222224;
@@ -355,12 +377,8 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  max-width: 360px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   text-align: center;
-  height: 133px;
+  max-width: 360px;
 }
 
 .advantages__heading {
@@ -368,6 +386,7 @@
   font-weight: 400;
   line-height: 24px;
   color: #FBFBFB;
+  padding: 28px 0 16px 0;
 }
 
 .advantages__description {
@@ -472,6 +491,10 @@
   outline: none;
 }
 
+.footer-top__email:hover {
+  background-color: #d6d1d1;
+}
+
 .footer-top__email[placeholder] {
   font-size: 14px;
   line-height: 17px;
@@ -497,6 +520,8 @@
           justify-content: center;
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
   border: none;
   cursor: pointer;
 }
@@ -552,6 +577,16 @@
   margin-right: 7px;
 }
 
+.catalog-page .breadcramp__list a:nth-child(2) {
+  font-weight: 700;
+  color: #EF5B70;
+}
+
+.catalog-page .breadcramp__list a:last-child {
+  color: #636363;
+  font-weight: 300;
+}
+
 .breadcramp {
   background-color: #F8F3F4;
 }
@@ -583,7 +618,12 @@
   color: #636363;
 }
 
-.breadcramp__list-color {
+.breadcramp__list a {
+  text-decoration: none;
+  color: #636363;
+}
+
+.breadcramp__list a:last-child {
   font-weight: 700;
   color: #EF5B70;
 }
@@ -1662,7 +1702,6 @@
   }
   .intro__box {
     background-position: left bottom;
-    background-size: 367px;
   }
   .intro__heading {
     margin-right: 15px;
@@ -2080,8 +2119,18 @@
 }
 
 .main-content {
-  width: 100vw;
-  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100vh;
+  overflow: auto;
 }
 
 .container {

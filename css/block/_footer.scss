@@ -28,6 +28,7 @@
 
             &--right {
                 flex-basis: 557px;
+
                 & form {
                     width: 100%;
                     max-width: 345px;
@@ -71,6 +72,9 @@
             border-bottom-left-radius: 25px;
             border-top-left-radius: 25px;
             outline: none;
+            &:hover{
+                background-color:rgb(214, 209, 209);
+            }
         }
 
         &__email[placeholder] {
@@ -92,6 +96,8 @@
             justify-content: center;
             border-top-right-radius: 25px;
             border-bottom-right-radius: 25px;
+            border-top-left-radius: 0px;
+            border-bottom-left-radius: 0px;
             border: none;
             cursor: pointer;
 
